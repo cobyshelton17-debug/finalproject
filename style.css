@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #243e63;
+    max-width: 1200px;
+}
+
+/* LANDING */
+
+.nav__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 32px;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav__img{
+    width: 40px;
+    margin-right: 12px;
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.nav__link--primary{
+    color: white;
+    background-color: #6415ff;
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+.nav__login{
+   margin: 0 0 0 24px; 
+}
