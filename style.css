@@ -1,10 +1,11 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     color: #243e63;
-    max-width: 1200px;
+}
+
+.purple{
+    color: #6415ff;
 }
 
 /* LANDING */
@@ -13,7 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 48px 32px;
+    margin: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .nav__logo{
@@ -45,4 +48,33 @@
 
 .nav__login{
    margin: 0 0 0 24px; 
+}
+
+.row{
+    display: flex;
+    margin: 32px;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.header__description{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+h2{
+    letter-spacing: 1.3px;
+}
+
+.company__img{
+    width: 30px;
+}
+
+.computer__img{
+    width: 500px;
+    margin-top: 40px;
 }
