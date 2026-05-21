@@ -19,11 +19,13 @@ h1{
     padding: 32px 0;
 }
 
+h4{
+    letter-spacing: 1.5px;
+}
+
 p{
     font-size: 16px;
 }
-
-/* LANDING */
 
 .row{
     display: flex;
@@ -34,6 +36,8 @@ p{
     margin: 0 auto;
     padding: 40px;
 }
+
+/* LANDING */
 
 .nav__logo--wrapper{
     display: flex;
@@ -144,6 +148,7 @@ font-weight: 700;
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .features__bullet-point{
@@ -177,4 +182,55 @@ font-weight: 700;
 
 #quality_work{
     
+}
+
+.QW__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.QW__content{
+    width: 40%;
+    margin-top: 80px
+}
+
+.QW__image{
+    width: 500px;
+    border: .1px solid lightgrey;
+    border-radius: 4px;
+    margin-top: 80px
+
+}
+
+.QW__title{
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.QW__para{
+line-height: 28px;
+opacity: 50%;
+font-weight: 600;
+font-size: 18px;
+}
+
+.QW__btn{
+    margin-top: 32px;
+    padding: 12px 32px;
+    color: white;
+    background-color: #6415ff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.QW__btn:active{
+    transform: translateY(-1px);
 }
