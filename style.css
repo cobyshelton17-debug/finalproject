@@ -359,7 +359,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 168px auto;
 }
 
 .pricing__header{
@@ -367,7 +367,7 @@ align-items: center;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 64px;
+    margin-bottom: 8px;
 }
 
 .pricing__para{
@@ -375,9 +375,187 @@ align-items: center;
     text-align: center;
 }
 
+.pricing__p{
+    font-size: 20px;
+}
+
 .pricing__cards{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin: 64px;
+}
+
+.pricing__card--personal{
+    border-top: 8pt solid rgb(56, 178, 172);
+    border-left: 1pt solid rgba(107, 104, 104, 0.521);
+    border-right: 1pt solid rgba(107, 104, 104, 0.521);
+    border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
+    width: calc(100%/3.5);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.pricing__title{
+    font-size: 56px;
+}
+
+.pricing__para{
+    opacity: 60%;
+}
+
+.btn__personal{
+    padding: 12px 48px;
+    color: white;
+    background-color: rgb(56, 178, 172);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+.pricing__card--personal:hover{
+    transform: scale(1.1);
+}
+
+.btn__personal:hover{
+    transform: translateY(-1px);
+}
+
+.btn__personal:active{
+    transform: translateY(1px);
+}
+
+.pricing__card--business{
+    background-color: #5348ef;
+    border-top: 8pt solid #5348ef;
+    border-left: 1pt solid rgba(107, 104, 104, 0.521);
+    border-right: 1pt solid rgba(107, 104, 104, 0.521);
+    border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
+    width: calc(100%/3.5);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn__business{
+    padding: 12px 48px;
+    color: #5348ef;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+.pricing__card--business:hover{
+    transform:scale(1.1);
+}
+
+.btn__business:hover{
+    transform: translateY(-1px);
+}
+
+.btn__business:active{
+    transform: translateY(1px);
+}
+
+.buisness{
+color: white;
+}
+
+.pricing__card--enterprise{
+    border-top: 8pt solid rgb(245, 101, 101);
+    border-left: 1pt solid rgba(107, 104, 104, 0.521);
+    border-right: 1pt solid rgba(107, 104, 104, 0.521);
+    border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
+    width: calc(100%/3.5);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.btn__enterprise{
+    padding: 12px 48px;
+    color: white;
+    background-color: rgb(245, 101, 101);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+.pricing__card--enterprise:hover{
+    transform:scale(1.1);
+}
+
+.btn__enterprise:hover{
+    transform: translateY(-1px);
+}
+
+.btn__enterprise:active{
+    transform: translateY(1px);
+}
+
+.pricing__card--top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-top: 32px;
+}
+
+.pricing__card--middle{
+    border-top: 2pt solid rgba(107, 104, 104, 0.521);
+    border-bottom: 2pt solid rgba(107, 104, 104, 0.521);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.pricing__card--bottom{
+    text-align: center;
+    padding: 32px;
+}
+
+.pricing__pink{
+    z-index: -1;
+    opacity: 25%;
+    position: absolute;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    transform: translateX(120px) translateY(-175px);
+}
+
+/* TESTIMONIALS */
+
+.testimonials__row{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonials__img{
+
 }
