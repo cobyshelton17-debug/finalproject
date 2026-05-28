@@ -919,6 +919,7 @@ color: white;
 .white{
     color: white;
     text-decoration: none;
+    display: inline-block;
 }
 
 .white:hover{
