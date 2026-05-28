@@ -22,10 +22,26 @@
                     <a href="#" class="nav__link">Pricing</a>
                     <a href="#" class="nav__link">Contact Us</a>
                     <a href="#" class="nav__link nav__link--login">Login</a>
-                    <a href="#" class="nav__link nav__link--signup">Sign Up</a>
+                    <a href="#" class="nav__link--signup">Sign Up</a>
                 </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
+        <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="menu__links">
+                <a href="" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="" class="menu__link" onclick="closeMenu()">Blog</a>
+                <a href="" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                <a href="" class="menu__link" onclick="closeMenu()">Login</a>
+                <a href="" class="menu__link" onclick="closeMenu()">Sign Up</a>
+            </div>
+        </div>
     </section>
     <section>
         <div class="container">
@@ -33,7 +49,10 @@
                 <div class="header__description">
                     <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
                     <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                    <div class="email__input--start"></div>
+                    <div class="email__input--start">
+                        <input type="text" class="header__email--input" placeholder="Your E-mail Address">
+                        <button class="header__email--btn">Get Started</button>
+                    </div>
                     <p class="header__logo--title">OUR TRUSTED CUSTOMERS</p>
                     <img class="header__img--companies" src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="company">
                 </div>
@@ -380,13 +399,13 @@
                         <p class="footer__copy--p">© 2018 Treact Inc. All Rights Reserved.</p>
                     </div>
                     <div class="footer__socials">
-                        <div class="footer__icon">
+                        <div class="footer__icon--play">
                             <i class="fa-solid fa-thumbs-up"></i>
                         </div>
                         <div class="footer__icon">
                             <i class="fa-solid fa-crow"></i>
                         </div>
-                        <div class="footer__icon">
+                        <div class="footer__icon--play">
                             <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
