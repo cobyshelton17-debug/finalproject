@@ -91,11 +91,39 @@ p{
     background-color: #3f0da3;
 }
 
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 378px;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    margin: 24px 16px;
+    padding: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 231, 235);
+    border-image: initial;
+    border-radius: 8px;
+    transition: 300ms;
+}
+
 .btn__menu {
     background-color: transparent;
     border: none;
     display: none;
     transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
 }
 
 /* END NAV */
@@ -928,7 +956,14 @@ MEDIA
 
 
 /*TABLETS*/
-@media (max-width: 768px){
+@media (max-width: 950px){
+    .nav__links{
+        display: none;
+    }
+
+    .btn__menu{
+        display: block;
+    }
 
 }
 
