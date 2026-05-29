@@ -109,13 +109,13 @@ p{
   background-color: transparent;
   font-size: 40px;
   border: none;
-  color: #7342d6;
+  color: #3f0da3;
   display: none;
 }
 
 .menu__backdrop {
   position: absolute;
-  background-color: #242424;
+  background-color: #ffffff;
   top: 0;
   left: 0;
   right: 0;
@@ -142,18 +142,44 @@ p{
 }
 
 .menu__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(140, 140, 140, 0.637);
+    padding: 16px 160px;
+    border-radius: 8px;
 }
 
 .menu__list {
   padding: 32px 0;
+    list-style-type: none;
 }
 
 .menu__link {
-  color: white;
-  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+.signup{
+    margin-top: 32px;
+    padding: 12px 32px;
+    color: white;
+    background-color: #6415ff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.signup:hover{
+    text-decoration: none;
+    background-color: #3f0da3;
 }
 
 .btn__menu--close {
@@ -161,7 +187,7 @@ p{
   top: 10px;
   right: 20px;
   padding: 8px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* END NAV */
@@ -527,15 +553,12 @@ align-items: center;
 }
 
 .pricing__card--personal{
-    border-top: 8pt solid rgb(56, 178, 172);
+    border-top: 8px solid rgb(56, 178, 172);
     border-left: 1pt solid rgba(107, 104, 104, 0.521);
     border-right: 1pt solid rgba(107, 104, 104, 0.521);
     border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
-    width: calc(100%/3.5);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    width: calc(100%/3.5);    overflow: hidden;
+    border-radius: 8px;    
     background-color: white;
 }
 
@@ -556,8 +579,8 @@ align-items: center;
     font-size: 16px;
     border: none;
     cursor: not-allowed;
+    background: linear-gradient(to right, rgb(56, 178, 172), rgb(177, 253, 249));
 }
-
 .pricing__card--personal:hover{
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -579,10 +602,7 @@ align-items: center;
     border-right: 1pt solid rgba(107, 104, 104, 0.521);
     border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
     width: calc(100%/3.5);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
 }
 
 .btn__business{
@@ -615,7 +635,7 @@ color: white;
 }
 
 .pricing__card--enterprise{
-    border-top: 8pt solid rgb(245, 101, 101);
+    border-top: 8px solid rgb(245, 101, 101);
     border-left: 1pt solid rgba(107, 104, 104, 0.521);
     border-right: 1pt solid rgba(107, 104, 104, 0.521);
     border-bottom: 1pt solid rgba(107, 104, 104, 0.521);
@@ -625,7 +645,9 @@ color: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: white;
-    background: linear-gradient(to right, rgb(245, 101, 101), white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .btn__enterprise{
@@ -638,7 +660,6 @@ color: white;
     border: none;
     cursor: not-allowed;
     background: linear-gradient(to right, rgb(245, 101, 101), rgb(253, 235, 235));
-
 }
 
 .pricing__card--enterprise:hover{
@@ -662,6 +683,14 @@ color: white;
     align-items: center;
     margin-bottom: 32px;
     padding-top: 32px;
+}
+
+.pricing__card--stripe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
 }
 
 .pricing__card--middle{
@@ -922,11 +951,10 @@ color: white;
 .white{
     color: white;
     text-decoration: none;
-    display: inline-block;
 }
 
 .white:hover{
-    border-bottom: 2px solid white;
+    text-decoration: underline;
 }
 
 .footer__logos{
@@ -1054,7 +1082,7 @@ MEDIA
 
     .pricing__cards{
         flex-direction: column;
-        gap: 16px;
+        gap: 48px;
     }
 
     .pricing__card--personal{
@@ -1081,6 +1109,11 @@ MEDIA
 
 /*MOBILE DEVICES*/
 @media (max-width: 700px){
+
+    .menu__links{
+        padding: 8px;
+        border: none;
+    }
 
     .QW__row{
         text-align: center;
